@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anand Sagar - Materials Science Research Scholar at IIT Ropar. Specializing in SERS, Supercapacitors, Hydrogen Generation, and Photocatalysis. Physics-driven research portfolio.">
+  <meta name="keywords" content="Anand Sagar, IIT Ropar, Materials Science, SERS, Supercapacitors, Hydrogen Generation, Photocatalysis, Spinel Ferrites, Chandigarh University">
+  <meta name="author" content="Anand Sagar">
+  
+  <!-- Open Graph / Social SEO -->
+  <meta property="og:title" content="Anand Sagar | Material Science Researcher | IIT Ropar">
+  <meta property="og:description" content="Explore the physics-driven materials science research of Anand Sagar, focusing on supercapacitors, SERS, electrocatalysis, and functional nanomaterials at IIT Ropar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/my-photo.png">
+
+  <title>Anand Sagar | Material Science Researcher | IIT Ropar</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo" id="logo-link">
+          <span class="logo-accent">A.</span>Sagar
+        </a>
+        
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Research</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle -->
+          <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          
+          <!-- Hamburger menu for mobile -->
+          <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home/Hero Section -->
+    <section id="home" class="hero-section">
+      <!-- Live Canvas Molecular Background -->
+      <canvas id="molecular-canvas"></canvas>
+
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="hero-badge animate-fade-in">IIT Ropar affiliation</div>
+          <h1 class="hero-title animate-slide-up">Anand Sagar</h1>
+          <h2 class="hero-subtitle animate-slide-up">Research Scholar &middot; Material Science &middot; IIT Ropar</h2>
+          <p class="hero-tagline animate-slide-up">"Driven by curiosity, uncovering the science behind nature"</p>
+          
+          <div class="hero-ctas animate-slide-up">
+            <a href="#publications" class="btn btn-primary" id="hero-btn-research">
+              <i class="fa-solid fa-graduation-cap"></i> View Research
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-btn-contact">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials animate-slide-up">
+            <a href="https://linkedin.com/in/anand-sagar-319022280" target="_blank" rel="noopener" aria-label="LinkedIn Profile" id="social-linkedin" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://researchgate.net/profile/Anand-Sagar-6" target="_blank" rel="noopener" aria-label="ResearchGate Profile" id="social-researchgate" class="social-link" title="ResearchGate">
+              <i class="fa-brands fa-researchgate"></i>
+            </a>
+            <a href="mailto:anandmahajan300@gmail.com" aria-label="Send Email" id="social-email" class="social-link" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-scale-in">
+          <div class="avatar-container">
+            <img src="assets/my-photo.png" alt="Anand Sagar Profile Avatar" id="profile-image" class="profile-img">
+          </div>
+          <!-- Download CV Float Button -->
+          <a href="assets/resume-placeholder.pdf" download class="floating-cv-btn" id="floating-cv" title="Download CV">
+            <i class="fa-solid fa-file-arrow-down"></i> <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section id="stats-bar" class="stats-bar-section">
+      <div class="stats-container container">
+        <div class="stat-card" id="stat-publications">
+          <div class="stat-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Publications</span>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-journals">
+          <div class="stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Core Journals</span>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-projects">
+          <div class="stat-icon"><i class="fa-solid fa-atom"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Key Projects</span>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-medals">
+          <div class="stat-icon" style="color: var(--accent-color);"><i class="fa-solid fa-medal"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">Gold Medal Highlight</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Statement -->
+          <div class="about-bio">
+            <h3 class="bio-title">Curiosity-driven physicist investigating the fundamental structure of nanomaterials.</h3>
+            <p class="bio-text">
+              My research philosophy is deeply rooted in unraveling the intricate structural mechanics of physics-driven nanomaterials and translating them into high-performance applications. I specialize in designing and engineering advanced functional materials for energy storage, environmental purification, and hypersensitive molecular detection.
+            </p>
+            <p class="bio-text">
+              Currently pursuing cutting-edge materials science research at <strong>IIT Ropar</strong>, I focus on building sustainable technologies. My passion lies in applying basic physics principles to address real-world challenges in electrocatalysis, plasmonics, and machine-learning-aided spectroscopy.
+            </p>
+            
+            <div class="bio-badge">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong>Gold Medalist &middot; M.Sc. Physics</strong>
+                <span>Recognized for graduating at the top of the class with 8.48/10 CGPA.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Timeline Cards -->
+          <div class="about-education">
+            <h3 class="education-title"><i class="fa-solid fa-graduation-cap"></i> Educational Background</h3>
+            
+            <div class="edu-timeline">
+              <!-- IIT Ropar Card -->
+              <div class="edu-card card" id="edu-iitrpr">
+                <div class="edu-year">2025 – Present</div>
+                <div class="edu-content">
+                  <h4 class="edu-degree">Ph.D. Scholar in Physics</h4>
+                  <p class="edu-institution">Indian Institute of Technology (IIT) Ropar</p>
+                  <p class="edu-description">Research focusing on Surface-Enhanced Raman Scattering (SERS), supercapacitors, and transition metal dichalcogenide nanomaterials.</p>
+                </div>
+              </div>
+
+              <!-- MSc Physics Card -->
+              <div class="edu-card card active" id="edu-msc">
+                <div class="edu-year">2022 – 2024</div>
+                <span class="gold-medal-tag"><i class="fa-solid fa-medal"></i> Gold Medalist</span>
+                <div class="edu-content">
+                  <h4 class="edu-degree">M.Sc. in Physics</h4>
+                  <p class="edu-institution">Chandigarh University</p>
+                  <p class="edu-stats">CGPA: <strong>8.48/10</strong> &bull; Gold Medal Awardee</p>
+                  <p class="edu-description"><strong>Thesis:</strong> Investigation of structural, electrical, magnetic, and electrochemical properties of Ni-Zn and Mg-Zn Spinel Ferrites nanoparticles synthesized via solution combustion.</p>
+                </div>
+              </div>
+
+              <!-- BSc Physics Card -->
+              <div class="edu-card card" id="edu-bsc">
+                <div class="edu-year">2019 – 2022</div>
+                <div class="edu-content">
+                  <h4 class="edu-degree">B.Sc. in Physics</h4>
+                  <p class="edu-institution">Panjab University</p>
+                  <p class="edu-stats">Score: <strong>79.9%</strong></p>
+                  <p class="edu-description">Foundation coursework in classical mechanics, electromagnetism, optics, quantum physics, and laboratory experiments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Academic Path</span>
+          <h2 class="section-title">Research &amp; Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Vertical Staggered Timeline -->
+          <div class="timeline-container">
+            <div class="timeline-track"></div>
+
+            <!-- Project 1 (IUAC) -->
+            <div class="timeline-item left-item" id="exp-iuac">
+              <div class="timeline-dot"><i class="fa-solid fa-atom"></i></div>
+              <div class="timeline-date">Oct 2024 – Jul 2025</div>
+              <div class="timeline-card card">
+                <div class="timeline-header">
+                  <span class="timeline-role">Project Fellow</span>
+                  <span class="timeline-funding"><i class="fa-solid fa-circle-dollar-to-slot"></i> IUAC-Funded Project</span>
+                </div>
+                <h3 class="timeline-project-title">Thin-Film Fabrication &amp; Ion Irradiation</h3>
+                <p class="timeline-desc">
+                  Focused on the engineering and optimization of cobalt-doped MoS₂ thin films for next-generation energy storage.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>Fabricated thin films using advanced DC/RF magnetron sputtering and spin coating techniques.</li>
+                  <li>Conducted high-energy Ag¹²⁺ ion irradiation treatments via Pelletron accelerator to alter lattice architecture.</li>
+                  <li>Evaluated structural modifications and electrochemical metrics for supercapacitor electrodes using CV, EIS, and GCD.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Project 2 (GLA) -->
+            <div class="timeline-item right-item" id="exp-gla">
+              <div class="timeline-dot"><i class="fa-solid fa-bolt"></i></div>
+              <div class="timeline-date">Mar 2024 – Jul 2024</div>
+              <div class="timeline-card card">
+                <div class="timeline-header">
+                  <span class="timeline-role">Project Fellow</span>
+                  <span class="timeline-funding"><i class="fa-solid fa-flask"></i> GLA University Project</span>
+                </div>
+                <h3 class="timeline-project-title">Catalytic Hydrogen Evolution (HER)</h3>
+                <p class="timeline-desc">
+                  Investigated high-performance multiferroic composites for clean fuel generation technologies.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>Synthesized Barium Strontium Titanate (BST) and Graphene Oxide (GO) composite frameworks.</li>
+                  <li>Analyzed phase structure, chemical composition, and electrochemical catalytic efficiency.</li>
+                  <li>Assessed materials for electrocatalytic water splitting applications in hydrogen generation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Interests Sidebar -->
+          <div class="research-interests">
+            <h3 class="interests-title"><i class="fa-solid fa-circle-nodes"></i> Core Research Fields</h3>
+            <p class="interests-desc">
+              My current active research pursuits bridge fundamental condensed matter physics and engineering interfaces:
+            </p>
+            <div class="interests-chips">
+              <span class="chip-badge"><i class="fa-solid fa-microscope"></i> Functional Nanomaterials</span>
+              <span class="chip-badge"><i class="fa-solid fa-lightbulb"></i> Plasmonics</span>
+              <span class="chip-badge"><i class="fa-solid fa-chart-line"></i> SERS</span>
+              <span class="chip-badge"><i class="fa-solid fa-battery-three-quarters"></i> Supercapacitors</span>
+              <span class="chip-badge"><i class="fa-solid fa-fire-flame-simple"></i> HER Electrocatalysis</span>
+              <span class="chip-badge"><i class="fa-solid fa-cubes"></i> Multiferroic Materials</span>
+              <span class="chip-badge"><i class="fa-solid fa-brain"></i> ML in Spectroscopy</span>
+            </div>
+
+            <div class="timeline-visual-card card">
+              <h4>Collaborators &amp; Affiliations</h4>
+              <p>Active research conducted in association with the Department of Physics at <strong>IIT Ropar</strong> and Chandigarh University, collaborating with distinguished scientists in functional materials characterization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Technical Competence</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Fabrication block -->
+          <div class="skills-card card" id="skills-fabrication">
+            <div class="skills-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3 class="skills-cat-title">Thin-Film Fabrication</h3>
+            <ul class="skills-list">
+              <li><i class="fa-solid fa-circle-check"></i> DC Magnetron Sputtering</li>
+              <li><i class="fa-solid fa-circle-check"></i> RF Sputtering</li>
+              <li><i class="fa-solid fa-circle-check"></i> Spin Coating</li>
+              <li><i class="fa-solid fa-circle-check"></i> Hydrothermal Route Synthesis</li>
+            </ul>
+          </div>
+
+          <!-- Characterisation block -->
+          <div class="skills-card card" id="skills-characterization">
+            <div class="skills-icon"><i class="fa-solid fa-microscope"></i></div>
+            <h3 class="skills-cat-title">Material Characterisation</h3>
+            <ul class="skills-list">
+              <li><i class="fa-solid fa-circle-check"></i> XRD (X-Ray Diffraction)</li>
+              <li><i class="fa-solid fa-circle-check"></i> SEM &amp; TEM Imaging</li>
+              <li><i class="fa-solid fa-circle-check"></i> AFM &amp; XPS Profiling</li>
+              <li><i class="fa-solid fa-circle-check"></i> Raman &amp; FTIR Spectroscopy</li>
+              <li><i class="fa-solid fa-circle-check"></i> UV-Vis (Optical absorption)</li>
+            </ul>
+          </div>
+
+          <!-- Programming block -->
+          <div class="skills-card card" id="skills-programming">
+            <div class="skills-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="skills-cat-title">Programming</h3>
+            <ul class="skills-list">
+              <li><i class="fa-solid fa-circle-check"></i> Python (Scientific Stack)</li>
+              <li><i class="fa-solid fa-circle-check"></i> NumPy, SciPy &amp; scikit-learn</li>
+              <li><i class="fa-solid fa-circle-check"></i> TensorFlow / Keras (DL models)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Principal Component Analysis (PCA)</li>
+            </ul>
+          </div>
+
+          <!-- Scientific Software block -->
+          <div class="skills-card card" id="skills-software">
+            <div class="skills-icon"><i class="fa-solid fa-computer"></i></div>
+            <h3 class="skills-cat-title">Scientific Software</h3>
+            <ul class="skills-list">
+              <li><i class="fa-solid fa-circle-check"></i> OriginPro (Data Plotting)</li>
+              <li><i class="fa-solid fa-circle-check"></i> FullProf (Rietveld refinement)</li>
+              <li><i class="fa-solid fa-circle-check"></i> HighScore Plus (Phase analysis)</li>
+              <li><i class="fa-solid fa-circle-check"></i> VESTA (Crystal visualization)</li>
+            </ul>
+          </div>
+
+          <!-- Techniques block -->
+          <div class="skills-card card" id="skills-techniques">
+            <div class="skills-icon"><i class="fa-solid fa-flask-vial"></i></div>
+            <h3 class="skills-cat-title">Specialized Techniques</h3>
+            <ul class="skills-list">
+              <li><i class="fa-solid fa-circle-check"></i> Pelletron Accelerator operations</li>
+              <li><i class="fa-solid fa-circle-check"></i> Ion Irradiation treatments</li>
+              <li><i class="fa-solid fa-circle-check"></i> Cyclic Voltammetry (CV)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Electrochemical Impedance (EIS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Collaborative Services</span>
+          <h2 class="section-title">Academic Services</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Springer Nature Badge -->
+        <div class="badge-row">
+          <div class="reviewer-badge animate-pulse" id="reviewer-badge-element">
+            <i class="fa-solid fa-certificate"></i> Peer Reviewer &mdash; Springer Nature
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card card" id="service-data-analysis">
+            <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3 class="service-title">Data Analysis</h3>
+            <p class="service-desc">Providing scientific data modeling, curve fitting (OriginPro), Rietveld structural refinement (FullProf), and spectroscopic PCA modeling.</p>
+            <a href="#contact" class="btn btn-text text-cta" id="service-cta-data">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card card" id="service-characterization">
+            <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+            <h3 class="service-title">Material Characterization</h3>
+            <p class="service-desc">Assisting with Phase Identification (HighScore Plus), microstructural analysis (FESEM, TEM), AFM surface topography, and electrochemical metrics evaluation.</p>
+            <a href="#contact" class="btn btn-text text-cta" id="service-cta-char">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card card" id="service-consultation">
+            <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3 class="service-title">Research Consultation</h3>
+            <p class="service-desc">Consultation on thin-film sputtering design, accelerator beamline irradiation layout, supercapacitor materials design, and manuscript proofing.</p>
+            <a href="#contact" class="btn btn-text text-cta" id="service-cta-consult">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Disseminating Knowledge</span>
+          <h2 class="section-title">Academic Publications</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="publications-wrapper">
+          <!-- Publications List -->
+          <ol class="publications-list" id="pub-list-element">
+            <!-- Pub 1 -->
+            <li class="pub-item card" id="pub-1">
+              <div class="pub-badge-row">
+                <span class="pub-badge badge-primary"><i class="fa-solid fa-calendar-day"></i> Published 11 May 2026</span>
+                <span class="pub-badge badge-accent"><i class="fa-solid fa-award"></i> First Author</span>
+                <span class="pub-badge badge-secondary"><i class="fa-solid fa-rocket"></i> IIT Ropar</span>
+              </div>
+              <h3 class="pub-title">Engineering cobalt-doped MoS₂ nanostructures on stainless steel for cost-effective supercapacitor electrodes</h3>
+              <p class="pub-authors"><strong>Sagar, A.</strong>, Bansal, A., Dubey, P. et al.</p>
+              <div class="pub-footer">
+                <span class="pub-journal"><i class="fa-solid fa-journal-whills"></i> Ionics 32, 6673–6685 (2026)</span>
+                <a href="https://doi.org/10.1007/s11581-026-07165-z" target="_blank" rel="noopener" class="pub-doi-link" id="doi-pub-1">
+                  <i class="fa-solid fa-link"></i> DOI: 10.1007/s11581-026-07165-z
+                </a>
+              </div>
+            </li>
+
+            <!-- Pub 2 -->
+            <li class="pub-item card" id="pub-2">
+              <div class="pub-badge-row">
+                <span class="pub-badge badge-accent"><i class="fa-solid fa-award"></i> First Author</span>
+                <span class="pub-badge badge-gray">2024</span>
+              </div>
+              <h3 class="pub-title">Structural, optical, and photocatalytic properties of Ni–Zn and Mg–Zn spinel ferrites</h3>
+              <p class="pub-authors"><strong>A. Sagar</strong>, S. Bhardwaj, A. Gupta, H. Tripathi, and R. Shukla</p>
+              <div class="pub-footer">
+                <span class="pub-journal"><i class="fa-solid fa-journal-whills"></i> Hyperfine Interactions, 245, 86 (2024)</span>
+                <a href="https://doi.org/10.1007/s10751-024-01930-0" target="_blank" rel="noopener" class="pub-doi-link" id="doi-pub-2">
+                  <i class="fa-solid fa-link"></i> DOI: 10.1007/s10751-024-01930-0
+                </a>
+              </div>
+            </li>
+
+            <!-- Pub 3 -->
+            <li class="pub-item card" id="pub-3">
+              <div class="pub-badge-row">
+                <span class="pub-badge badge-gray">2024</span>
+              </div>
+              <h3 class="pub-title">Investigations on structural, dielectric, and ferroelectric properties of Bi₄₋ₓNdₓTi₃O₁₂</h3>
+              <p class="pub-authors">S. Rani, <strong>A. Sagar</strong>, A. R. Khan, A. Gupta, and S. Bhardwaj</p>
+              <div class="pub-footer">
+                <span class="pub-journal"><i class="fa-solid fa-journal-whills"></i> Hyperfine Interactions, 245, 251 (2024)</span>
+                <a href="https://doi.org/10.1007/s10751-024-02082-x" target="_blank" rel="noopener" class="pub-doi-link" id="doi-pub-3">
+                  <i class="fa-solid fa-link"></i> DOI: 10.1007/s10751-024-02082-x
+                </a>
+              </div>
+            </li>
+
+            <!-- Pub 4 -->
+            <li class="pub-item card" id="pub-4">
+              <div class="pub-badge-row">
+                <span class="pub-badge badge-gray">2025</span>
+              </div>
+              <h3 class="pub-title">Structural, dielectric and magnetodielectric behavior of Bi₃.₁₅Nd₀.₈₅Ti₃₋ₓ(Feₓ/₂Crₓ/₂)O₁₂ ceramics</h3>
+              <p class="pub-authors">S. Rani, A. R. Khan, <strong>A. Sagar</strong> et al.</p>
+              <div class="pub-footer">
+                <span class="pub-journal"><i class="fa-solid fa-journal-whills"></i> Ceramics International, 51, 8558–8569 (2025)</span>
+                <a href="https://doi.org/10.1016/j.ceramint.2024.12.286" target="_blank" rel="noopener" class="pub-doi-link" id="doi-pub-4">
+                  <i class="fa-solid fa-link"></i> DOI: 10.1016/j.ceramint.2024.12.286
+                </a>
+              </div>
+            </li>
+
+            <!-- Pub 5 -->
+            <li class="pub-item card" id="pub-5">
+              <div class="pub-badge-row">
+                <span class="pub-badge badge-gray">2026</span>
+              </div>
+              <h3 class="pub-title">Tuning magnetodielectric coupling in Bi₃.₁₅Nd₀.₈₅Ti₃₋ₓ(Feₓ/₂Crₓ/₂)O₁₂ ceramics</h3>
+              <p class="pub-authors">S. Rani, A. R. Khan, <strong>A. Sagar</strong> et al.</p>
+              <div class="pub-footer">
+                <span class="pub-journal"><i class="fa-solid fa-journal-whills"></i> Ceramics International (2026)</span>
+                <a href="https://doi.org/10.1016/j.ceramint.2026.02.139" target="_blank" rel="noopener" class="pub-doi-link" id="doi-pub-5">
+                  <i class="fa-solid fa-link"></i> DOI: 10.1016/j.ceramint.2026.02.139
+                </a>
+              </div>
+            </li>
+          </ol>
+
+          <!-- External Research Profile link -->
+          <div class="publications-cta">
+            <a href="https://researchgate.net/profile/Anand-Sagar-6" target="_blank" rel="noopener" class="btn btn-outline" id="view-researchgate-btn">
+              <i class="fa-brands fa-researchgate"></i> View Publications on ResearchGate
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Initiate Dialog</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Panel -->
+          <div class="contact-info card">
+            <h3 class="contact-card-title">Institutional Location</h3>
+            
+            <div class="contact-items">
+              <!-- Item 1 Address -->
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="item-details">
+                  <strong>Affiliation Address</strong>
+                  <span>Indian Institute of Technology (IIT) Ropar, Ropar, Punjab, India - 140001</span>
+                </div>
+              </div>
+
+              <!-- Item 2 Email -->
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="item-details">
+                  <strong>Academic &amp; Personal Email</strong>
+                  <a href="mailto:anandmahajan300@gmail.com" id="contact-email-link">anandmahajan300@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Item 3 Phone -->
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="item-details">
+                  <strong>Direct Telephony</strong>
+                  <a href="tel:+917009639618" id="contact-phone-link">+91-7009639618</a>
+                </div>
+              </div>
+
+              <!-- Item 4 Links -->
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-solid fa-link"></i></div>
+                <div class="item-details">
+                  <strong>Professional Networks</strong>
+                  <div class="contact-sublinks">
+                    <a href="https://linkedin.com/in/anand-sagar-319022280" target="_blank" rel="noopener" id="contact-linkedin-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://researchgate.net/profile/Anand-Sagar-6" target="_blank" rel="noopener" id="contact-rg-link"><i class="fa-brands fa-researchgate"></i> ResearchGate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-footer-card">
+              <p>For characterization collaborations or data consulting requests, please utilize the contact fields. A reply will usually arrive within 24–48 hours.</p>
+            </div>
+          </div>
+
+          <!-- Glass Form -->
+          <div class="contact-form-container card">
+            <h3 class="contact-card-title">Send a Direct Message</h3>
+            
+            <form id="contact-form" class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="form-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="form-name" name="name" required placeholder="Enter your full name">
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="form-email" name="email" required placeholder="Enter your email address">
+                <span class="error-msg" id="email-error">Please enter a valid email</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Your Message <span class="required">*</span></label>
+                <textarea id="form-message" name="message" required rows="5" placeholder="Describe your collaboration proposal or question..."></textarea>
+                <span class="error-msg" id="message-error">Please enter a message</span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block">
+                <span id="submit-btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                <span id="submit-btn-loader" class="hidden-loader"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Success Notification Container -->
+  <div id="toast-success" class="toast-success-card">
+    <div class="toast-content">
+      <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <div class="toast-text">
+        <h4>Message Dispatched!</h4>
+        <p>Your message has been processed successfully. Anand Sagar will get in touch shortly.</p>
+      </div>
+      <button class="toast-close" id="toast-close-btn" aria-label="Close message"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-area">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="copyright">&copy; 2026 Anand Sagar. All Rights Reserved.</p>
+      </div>
+      <div class="footer-center">
+        <p class="design-credit">Designed with <i class="fa-solid fa-heart accent-pulse"></i> for Materials Science</p>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="scroll-top-btn" id="scroll-top" title="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
